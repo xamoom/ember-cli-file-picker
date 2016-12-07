@@ -97,9 +97,10 @@ export default Component.extend({
       }
     }
 
-    if (!this.get('hideFileInput')) {
+    try{
       this.$('.file-picker__input').val(null);
-    }
+    }catch(_){}
+
   },
 
   /**

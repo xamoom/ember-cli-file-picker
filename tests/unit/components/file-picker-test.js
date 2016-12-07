@@ -42,6 +42,7 @@ test('it handles `filesAreValid` when it returns TRUE', function(assert) {
 
   const files = ['test'],
     component = this.subject({
+      hideFileInput: false,
       filesAreValid: function() {
         assert.ok(true, '`filesAreValid` is called when defined');
         return true;
